@@ -39,7 +39,7 @@ class DateTimeField extends FormField<DateTime> {
     StrutStyle strutStyle,
     TextDirection textDirection,
     TextAlign textAlign = TextAlign.start,
-    TextAlignVertival textAlignVertical = TextAlignVertical.center,
+    TextAlignVertical textAlignVertical = TextAlignVertical.center,
     bool autofocus = false,
     this.readOnly = true,
     bool showCursor,
