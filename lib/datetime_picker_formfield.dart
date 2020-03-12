@@ -39,6 +39,7 @@ class DateTimeField extends FormField<DateTime> {
     StrutStyle strutStyle,
     TextDirection textDirection,
     TextAlign textAlign = TextAlign.start,
+    TextAlignVertival textAlignVertical = TextAlignVertical.center,
     bool autofocus = false,
     this.readOnly = true,
     bool showCursor,
@@ -76,6 +77,7 @@ class DateTimeField extends FormField<DateTime> {
                       const InputDecoration())
                   .applyDefaults(Theme.of(field.context).inputDecorationTheme);
               return TextField(
+                textAlignVertical: textAlignVertical,
                 controller: state._effectiveController,
                 focusNode: state._effectiveFocusNode,
                 decoration: effectiveDecoration.copyWith(
